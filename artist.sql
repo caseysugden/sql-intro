@@ -4,7 +4,7 @@
 INSERT INTO artist (name)
 VALUES ('michael jackson'), ('bruno mars'), ('maroon 5');
 -- 2 Select 10 artists in reverse alphabetical order.
-SELECT * FROM artists
+SELECT * FROM artist
 ORDER BY name DESC;
 -- 3 Select 5 artists in alphabetical order.
 SELECT * FROM artist
@@ -12,7 +12,7 @@ ORDER BY name
 LIMIT 5;
 -- 4 Select all artists that start with the word ‘Black’.
 SELECT * FROM artist
-LIKE 'BLACK';
+LIKE 'BLACK%';
 -- 5 Select all artists that contain the word ‘Black’.
 SELECT * FROM artist
-IN ('Black');
+WHERE name IN ('Black');
